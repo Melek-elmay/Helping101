@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helping101</title>
+    
 
     <style>
+        body{
+            background-image: url("https://static01.nyt.com/images/2018/04/16/opinion/16Rank/16Rank-superJumbo.jpg?quality=90&auto=webp");
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: 700px;
+            background-position-x: center;
+        }
         #clothes {
             display: flex;
             flex-direction: column;
@@ -14,60 +22,426 @@
         .allClothes {
             display: flex;
             flex-direction: row;
-            gap: 100px;
+            gap: 50px;
         }
 
         .clothesImg {
             width: 100px;
             height: 100px;
         }
+
+        .allDrugs {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+
+        .toDeImg {
+            width: 60px;
+        }
+
+        
+        #Red-to-green{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+
+        #Driver{
+            border: 1px solid black;
+            width: 30%;
+            height: 30%;
+        }
+
+        .moneyDiv{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            border: 2px solid black;
+        }
+
+        .moneyff {
+            border: 1px solid black;
+            background-color: white;
+            color: blue;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+
+        }
+
+        #mainTitle{
+    text-align: center;
+    border: 3px solid rgba(17, 1, 17, 0.388);
+    color: rgba(67, 43, 225, 0.995); 
+    color: white;
+  text-shadow: 2px 2px 2px black, 0 0 25px rgb(82, 82, 244), 0 0 5px rgb(5, 5, 208);
+}
+
+#title1{
+margin-left: 50px;
+color:rgba(17, 17, 16, 0.753);
+background-image: url("https://camerajabber.com/wp-content/uploads/2016/11/Better_colour_photos_n7a2ojdszns-harli-marten-1280x793.jpg");
+display: inline-block;
+padding: 10px;
+border-radius: 25%;
+}
+
+
+.putImage{
+    color:rgb(89, 86, 86);
+    background-image: url("https://img.freepik.com/premium-photo/blue-pink-smoke_708558-334.jpg");
+    border-radius: 25%;
+    display: inline-block;
+}
+
+.item{
+    border-radius: 40%;
+    color: rgba(240, 91, 216, 0.679);
+}
+
+.clothesImg{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffffc7;
+    background-color: #086987ba;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #ada8a88d;
+}
+
+
+#button1{
+    color: rgba(0, 0, 0, 0.715);
+}
+#button2{
+    color: rgba(0, 0, 0, 0.711);
+}
+#button3{
+    color: rgba(0, 0, 0, 0.712);
+}
+#button4{ 
+    color: rgba(0, 0, 0, 0.716);
+}
+
+.img2{
+    color:rgba(123, 123, 169, 0.858)
+}
+
+
+
+.allDrugs {
+    
+    flex-direction: row;
+    gap: 200px;
+    display: flex;
+}
+
+
+.item2{
+    border-radius: 40%;
+    color: rgba(240, 91, 216, 0.679);
+}
+
+
+#button-01{
+    color: rgba(0, 0, 0, 0.715);
+}
+#button-02{
+    color: rgba(0, 0, 0, 0.715);
+}
+#button-03{
+    color: rgba(0, 0, 0, 0.715);
+}
+#button-04{
+    color: rgba(0, 0, 0, 0.715);
+}
+
+
+.it{
+    background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+
+
+.kg{
+    color:rgb(89, 86, 86);
+    background-image: url("https://img.freepik.com/premium-photo/blue-pink-smoke_708558-334.jpg");
+    border-radius: 25%;
+}
+
+
+#dr{
+    text-align: center;
+    color:rgba(24, 18, 1, 0.877);
+    background-color: #086987ba;
+    border-radius: 20px;
+    box-shadow: 5px #ada8a88d;
+    padding: 10px 25px;
+    font-size: 50px;
+}
+
+
+#title2{
+    
+    color:rgba(17, 17, 16, 0.753);
+    background-image: url("https://camerajabber.com/wp-content/uploads/2016/11/Better_colour_photos_n7a2ojdszns-harli-marten-1280x793.jpg");
+    display: flex;
+    border-radius: 25%;
+    align-items: center;
+    
+    display: inline-block;
+}
+.putImage1{
+    color:rgb(89, 86, 86);
+    background-image: url("https://img.freepik.com/premium-photo/blue-pink-smoke_708558-334.jpg");
+    display: inline-block;
+}
+.allmoney{
+    text-align: center;
+    border: 3px solid rgb(22, 131, 227);
+}
+
+#mm {
+    font-size: larger;
+    background-color: rgba(172, 255, 47, 0.604);
+    
+}
+
+
+
+#h3{
+color: rgba(3, 41, 74, 0.836);
+
+}
+#Red-to-green{
+    align-items:center;
+}
+
+#KOLS {
+    border: 3px solid blue;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+#MoneyDiv{
+    align-items: center;
+    display: inline-block;
+}
+#Counter{
+    background-color:rgba(172, 255, 47, 0.604); ;
+}
+#dv{
+    color: rgba(92, 92, 230, 0.947);
+    
+}
+
+.toMain {
+    font-size: 200%;
+    font-weight: 400;
+    background-color: aqua;
+    font-size: larger;
+    color: purple;
+}
+
+        
+
+        
+        
     </style>
 </head>
 <body>
+    <a href="mainPage.html" class="toMain">Main page</a>
+    <br><br>
     <h1 id="mainTitle">Anonymous Help For children</h1>
+    
 
-    <h2>help clothing childs in need</h2>
+<div id="MoneyDiv" class="moneyDiv">
+    <h2 id="title2">ma Kteb Men rabi</h2>
+    <br>
+    <input type="text" id="money1">
+    <br>
+    <h3 class="putImage1">the amount of money i'm going to send</h3>
+    <br>
+    <button id="moneyBtn">Add Money</button>
+</div>
+<br>
+<br>
+<h2 id="title1">help clothing childs in need</h2>
+
+
+    
 <div class="allClothes"> 
+    
    
     <div id="clothes">
         <h3 class="putImage">Put Image</h3>
+        
         <input type="text" class="item"  id="imageLink1">
+        <h3 class="img2">The Image</h3>
         <img src="" alt=""  id="image1" class="clothesImg">
-        <h2>The Image</h2>
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg1">
+        
         <button class="item" id="button1">send to driver</button>
     </div>  
 
     <div id="clothes">
         <h3 class="putImage">Put Image</h3>
-        <input type="text" class="item"  id="imageLink2">
+        <input type="text" class="it"  id="imageLink2">
+        <h3 class="img2">The Image</h3>
         <img src="" alt="" id="image2" class="clothesImg">
-        <h2>The Image</h2>
+        
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg2">
         <button class="item" id="button2">send to Driver</button>
     </div>
     
     <div id="clothes">
         <h3 class="putImage">Put Image</h3>
         <input type="text" class="item" id="imageLink3">
+        <h3 class="img2">The Image</h3>
         <img src="" alt="" id="image3" class="clothesImg">
-        <h2>The Image</h2>
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg3">
+        
         <button id="button3">send to Driver</button>
     </div>
 
     <div id="clothes">
         <h3 class="putImage">Put Image</h3>
         <input type="text" class="item" id="imageLink4">
+        <h3 class="img2">The Image</h3>
         <img src="" alt="" id="image4" class="clothesImg">
-        <h2>The Image</h2>
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg4">
+        
         <button class="item" id="button4">send to Driver</button>
     </div>
 
 </div>
+<br>
+<br>
+<h2 id="title1">help with medical assisstance</h2>
 
-<h2> help children with medical assisstance</h2>
+<div class="allDrugs"> 
+   
+    <div id="drugs">
+        <h3 class="putImage">Put Image of your </h3>
+        <input type="text" class="item"  id="imageLink1-01">
+        <h3 class="img2">The Image</h3>
+        <img src="" alt=""  id="image1-01" class="clothesImg">
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg5">
+        
+        <button class="item" id="button-01">send to driver</button>
+    </div>  
 
 
 
+    <div id="drugs">
+        <h3 class="putImage">Put Image of your Item</h3>
+        <input type="text" class="item"  id="imageLink1-02">
+        <h3 class="img2">The Image</h3>
+        <img src="" alt="" id="image2-02" class="clothesImg">
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg6">
+        <br>
+        <br>
+        <button class="item" id="button-02">send to Driver</button>
+    </div>
 
+
+    
+    <div id="drugs">
+        <h3 class="putImage">Put Image of your Item</h3>
+        <input type="text" class="item" id="imageLink1-03">
+        <h3 class="img2">The Image</h3>
+        <img src="" alt="" id="image3-03" class="clothesImg">
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg7">
+        <br>
+        <br>
+        <button id="button-03" class="item">send to Driver</button>
+    </div>
+
+
+
+    <div id="drugs">
+        <h3 class="putImage">Put Image of your Item</h3>
+        <input type="text" class="item" id="imageLink1-04">
+        <h3 class="img2">The Image</h3>
+        <img src="" alt="" id="image4-04" class="clothesImg">
+        <h4 class="kg">weight by KG</h4>
+        <input type="text" id="Kg8">
+        <br>
+        <br>
+        <button class="item" id="button-04">send to Driver</button>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<div id="Driver">
+    <div id="MamA">
+          <h1 id="dr">donation Items</h1>
+      
+          <img src="" alt="" class="toDeImg" id="small1">
+          <img src="" alt="" class="toDeImg" id="small2">
+          <img src="" alt="" class="toDeImg" id="small3">
+          <img src="" alt="" class="toDeImg" id="small4">
+          <br>
+          <img src="" alt="" class="toDeImg" id="small5">
+          <img src="" alt="" class="toDeImg" id="small6">
+          <img src="" alt="" class="toDeImg" id="small7">
+          <img src="" alt="" class="toDeImg" id="small8">
+       
+          <h3 id="dv">Weight by Kg (under 100kg):</h3>
+          <div id="Counter"></div>
+          <br><br>
+
+          <h3 id="dv">Money Added:</h3>
+          <div id="moneyPr"></div>
+          <div id="moneyff" class="moneyff">
+        
+          </div>
+
+
+   </div>
+
+   <div id="KOLS">    
+        <img src="" alt="" id="truck" style="width: 150px;">
+       <br>
+       <br>
+       <h3 id="h3">Driver Request</h3>
+       <br>
+       <input type="text" id="location" placeholder="enter your location...">
+       <br><br>
+       <input type="text" id="TelephoneNum" placeholder="put your phone number">
+       <br>
+       <button id="reqDriver">Request Driver</button>
+       <br>
+       <h3 id="h3">the driver will arrive in 2 days</h3>
+       
+
+    </div>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js">  </script>
 
 <script src="script.js"></script>
 

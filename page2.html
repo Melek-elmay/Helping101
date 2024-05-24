@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request help</title>
+    
+
+
+     <style>
+
+       #displayAll {
+           
+           display: flex;
+           flex-wrap: wrap;
+           gap: 10px;
+       }
+      
+       #displayAll {
+           
+           display: flex;
+           flex-wrap: wrap;
+       }
+       #title{
+        color:rgba(214, 76, 76, 0.826) ;
+        background-color: bisque;
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        
+       }
+       #title2{
+        color:rgb(87, 17, 17);
+        background-color:rgba(255, 255, 255, 0.599);
+        display: inline-block;
+       }
+       .title{
+        color:rgb(87, 17, 17);
+       font-size: 150%;
+       background-color:rgba(255, 255, 255, 0.599);
+       display: inline-block;
+      
+       }
+       #name1{
+        border-radius: 25%;
+        padding: 14px 40px;
+        
+       }
+       #location1{
+        border-radius: 25%;
+        padding: 14px 40px;
+       }
+    #age1{
+        border-radius: 25%;
+        padding: 14px 40px;
+    }
+    #Special1{
+        border-radius: 25%;
+        padding: 14px 40px;
+    }
+       #clothesBtn{
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+        padding: 14px 40px;
+ 
+       }
+       #drugsBtn{
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+        padding: 14px 40px;
+       }
+       #moneyBtn{
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+        padding: 14px 40px;
+       }
+       #first{
+        text-align: center;
+       }
+       body{
+            background-image: url("https://static01.nyt.com/images/2018/04/16/opinion/16Rank/16Rank-superJumbo.jpg?quality=90&auto=webp");
+            background-repeat: no-repeat;
+            background-size: 700px;
+            background-position-x: center;
+            text-align: center;
+        }
+
+
+
+
+
+        
+    .block101{
+        border: 2px solid black;
+        gap: 10px;
+        background-color: rgba(0, 255, 115, 0.299);
+
+    }
+
+    .divMed{
+        margin: 3px;
+    }
+
+    .h2{
+        background-color: bisque;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .h3 {
+        background-color: azure;
+        font-family: 'Times New Roman', Times, serif;
+    }
+     
+    .lood{
+        color: aqua;
+        background-color: blueviolet;
+        font-size: larger;
+        display: inline;
+    }
+    
+    .first-h1 {
+        background-color: rgba(0, 255, 255, 0.238);
+    }
+   
+
+
+ 
+
+     </style>
+
+  </head>
+  <body>
+    <a href="mainPage.html" class="lood">back to main bage</a>
+    <h1 class="first-h1">
+      It's okay to ask for help, we all need help but in a very different way!
+    </h1>
+    <br /><br />
+    <h2 style="background-color: rgba(15, 18, 167, 0.555); color: aliceblue;">Put your information here</h2>
+    <br /><br />
+    <h3 style="background-color: rgba(0, 255, 255, 0.476);">name</h3>
+    <input type="text" placeholder="please put your name here" id="name1" />
+      <br /><br />
+      <h3 style="background-color: rgba(0, 255, 255, 0.428);">location</h3>
+
+    <input type="text" placeholder="please put your location here" id="location1"/>
+
+      <br /><br />
+    <h3 style="background-color: rgba(0, 255, 255, 0.422);">age</h3>
+
+    <input type="text" placeholder="please put your age here" id="age1" />
+       <br /><br />
+       <h3 style="background-color: rgba(0, 255, 255, 0.429);">need</h3>
+       <div id="need-01">
+         <button id="clothesBtn">need clothes</button>
+         <button id="drugsBtn">need medicine</button>
+         <button id="moneyBtn">need cash</button>
+         <h4>other special need</h4>
+
+    <input type="text" placeholder="please put one word" id="Special1"/>
+    </div>
+    <br /><br />
+
+    <button id="submitTo">Submit Information</button>
+
+    <div id="displayAll"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      var name;
+      var loc;
+      var age;
+      var specialNeed;
+      var need;
+
+      var clothesBtn = document.getElementById("clothesBtn");
+      var drugsBtn = document.getElementById("drugsBtn");
+      var moneyBtn = document.getElementById("moneyBtn");
+
+      function clothesBtn1() {
+        $("#clothesBtn").click(function() {
+           need = "clothes"
+        })  
+      }
+
+      function drugsBtn1() {
+        $("#drugsBtn").click(function() {
+           need = "drugs"
+        })  
+      }
+
+      function moneyBtn1() {
+        $("#moneyBtn").click(function() {
+           need = "money"
+        })  
+      }
+
+
+      clothesBtn1()
+      drugsBtn1()
+      moneyBtn1()
+
+      function info() {
+        var obj1 = {};
+
+        obj1.name = name;
+        obj1.location = location;
+        obj1.age = age;
+        return obj1;
+      }
+      
+      $('#name1').change(function(){
+       name = document.getElementById("name1").value;
+
+        console.log(name);
+      })
+
+
+      $('#location1').change(function(){
+       loc = document.getElementById("location1").value;
+
+        console.log(loc);
+      })
+
+
+      $('#age1').change(function(){
+        age = document.getElementById("age1").value;
+
+        console.log(age);
+      })
+
+      $("#Special1").change(function() {
+        special1 = document.getElementById("Special1").value;
+
+        console.log(special1)
+      })
+
+
+// localStorage.setItem("name",name)
+// var x = localStorage.getItem("name")
+// console.log("local",x);
+     $("#submitTo").click(function () {
+        // $("#displayAll").empty()
+        $("#displayAll").append(
+          `<div class ="block101">
+             <div id="id-${name}" class="divMed">
+       
+             <h2 class="h2">your anonymous name:</h2>
+             <h3 class="h3">${name}</h3>
+             
+             <h2 class="h2">your true location:</h2>
+             <h3 class="h3">${loc}</h3>
+   
+             <h2 class="h2">your age:</h2>
+             <h3 class="h3">${age}</h3>
+
+             <h2 class="h2">need</h2>
+             <h3 class="h3">${need}</h3>
+
+             <h2 class="h2">Special need</h2>
+             <h3 class="h3">${special1}</h3>
+   
+             </div>
+          </div>
+          `
+        );
+      });
+    </script>
+  </body>
+</html>

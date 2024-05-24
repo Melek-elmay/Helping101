@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request help</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+     <style>
+
+       #displayAll {
+           
+           display: flex;
+           flex-wrap: wrap;
+       }
+
+       
+     </style>
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <h1>
+      It's okay to ask for help, we all need help but in a very different way!
+    </h1>
+    <br /><br />
+    <h2>Put your information here</h2>
+    <br /><br />
+    <h3>name</h3>
+    <input type="text" placeholder="please put your name here" id="name1" />
+      <br /><br />
+      <h3>location</h3>
+
+    <input type="text" placeholder="please put your location here" id="location1"/>
+
+      <br /><br />
+    <h3>age</h3>
+
+    <input type="text" placeholder="please put your age here" id="age1" />
+       <br /><br />
+       <h3>need</h3>
+       <div id="need-01">
+         <button id="clothesBtn">need clothes</button>
+         <button id="drugsBtn">need medicine</button>
+         <button id="moneyBtn">need cash</button>
+         <h4>other special need</h4>
+
+    <input type="text" placeholder="please put one word" id="Special1" />
+    </div>
+    <br /><br />
+
+    <button id="submitTo">Submit Information</button>
+
+    <div id="displayAll"></div>
+
+    <script>
+      var name;
+      var loc;
+      var age;
+      var specialNeed;
+
+      var clothesBtn = document.getElementById("clothesBtn");
+      var drugsBtn = document.getElementById("drugsBtn");
+      var moneyBtn = document.getElementById("moneyBtn");
+
+      function info() {
+        var obj1 = {};
+
+        obj1.name = name;
+        obj1.location = location;
+        obj1.age = age;
+        return obj1;
+      }
+      
+      $('#name1').change(function(){
+       name = document.getElementById("name1").value;
+
+        console.log(name);
+      })
+
+
+      $('#location1').change(function(){
+       loc = document.getElementById("location1").value;
+
+        console.log(loc);
+      })
+
+
+      $('#age1').change(function(){
+        age = document.getElementById("age1").value;
+
+        console.log(age);
+      })
+
+      $("#Special1").change(function() {
+        special = document.getElementById("Special1").value;
+
+        console.log(special)
+      })
+
+
+
+
+     $("#submitTo").click(function () {
+        // $("#displayAll").empty()
+        $("#displayAll").append(
+          `<div class ="block101">
+             <div id="id-${name}">
+       
+             <h2>your anonymous name:</h2>
+             <h3>${name}</h3>
+             
+             <h2>your true location:</h2>
+             <h3>${loc}</h3>
+   
+             <h2>your age:</h2>
+             <h3>${age}</h3>
+   
+             <h2>Special need</h2>
+             <h3>${special}</h3>
+   
+             </div>
+          </div>`
+
+        );
+      });
+    </script>
+  </body>
+</html>
